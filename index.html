@@ -32,7 +32,9 @@ SPDX-License-Identifier: Apache-2.0
         var msg = document.getElementById("txt_msg");
         msg.innerHTML = "Hello, Im Hacking this Web Application!!";
 
-        const img = document.ge;
+        const img = document.createElement("img");
+        img.src = "path/to/image.jpg";
+        document.body.appendChild(img);
       };
     </script>
   </head>
