@@ -1,46 +1,48 @@
-<!--
-Copyright (c) 2020-2023 LG Electronics Inc.
-
-SPDX-License-Identifier: Apache-2.0
--->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example Web App</title>
-    <style type="text/css">
-      body {
-        width: 100%;
-        height: 100%;
-        background-color: #202020;
-      }
-      div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: table;
-      }
-      h1 {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        color: #ffffff;
-      }
-    </style>
-    <script type="text/javascript">
-      window.onload = function () {
-        var msg = document.getElementById("txt_msg");
-        msg.innerHTML = "Hello, Im Hacking this Web Application!!";
-
-        const img = document.createElement("img");
-        img.src = "path/to/image.jpg";
-        document.body.appendChild(img);
-      };
-    </script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>webOS TV JS Service Samples</title>
+    <script type="text/javascript" src="lib/webOSTV.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </head>
-  <body class="flex">
-    <div>
-      <h1 id="txt_msg">Hello, Web Application!!</h1>
-    </div>
+  <body>
+    <main class="flex"></main>
+
+    <template id="template-card">
+      <article class="card">
+        <img
+          src="./assets/imgs/bg-pattern-card.svg"
+          alt="imagen header card"
+          class="card-header"
+        />
+        <div class="card-body">
+          <img
+            src="./assets/imgs/image-victor.jpg"
+            alt="imagen de vitoko"
+            class="card-body-img"
+          />
+          <h1 class="card-body-title">
+            <span></span>
+          </h1>
+          <p class="card-body-text"></p>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-social">
+            <h3></h3>
+            <p>Attack</p>
+          </div>
+          <div class="card-footer-social">
+            <h3></h3>
+            <p>Special</p>
+          </div>
+          <div class="card-footer-social">
+            <h3></h3>
+            <p>Defense</p>
+          </div>
+        </div>
+      </article>
+    </template>
   </body>
 </html>
