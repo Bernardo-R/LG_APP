@@ -62,7 +62,7 @@ const populateCard = (pokemon) => {
   // Add button with class "card-btn" and refresh the page when clicked
   const button = document.createElement("button");
   button.classList.add("card-btn");
-  button.textContent = "Refresh";
+  button.textContent = "New Pokemon";
   button.addEventListener("click", () => {
     location.reload();
   });
